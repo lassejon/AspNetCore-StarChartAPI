@@ -64,7 +64,8 @@ namespace StarChart.Controllers
             return CreatedAtRoute
                 (
                     "GetById",
-                    new { id = celestialObject.Id}
+                    new { id = celestialObject.Id },
+                    celestialObject
                 );
         }
 
