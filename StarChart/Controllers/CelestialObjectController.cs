@@ -91,7 +91,7 @@ namespace StarChart.Controllers
             var celestialObjectToUpdate = _context.CelestialObjects.Find(id);
             if (celestialObjectToUpdate == null) return NotFound();
 
-           celestialObjectToUpdate.Name = celestialObjectToUpdate.Name;
+           celestialObjectToUpdate.Name = name;
 
             _context.Update(celestialObjectToUpdate);
             _context.SaveChanges();
